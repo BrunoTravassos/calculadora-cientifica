@@ -1,6 +1,6 @@
 <div class="container container-light mt-5">
 
-
+<h3>Calculadora Cientifica</h3>
   <form class="form-light">
     <input readonly id="display1" type="text" class="form-control-lg text-right form-input-light"name="display"
                 [value]="display">
@@ -15,7 +15,7 @@
   </div>
 
   <div class="d-flex justify-content-between button-row">
-    <button id="clear" type="button" class="operator-group-light col-6" (click)="limpar()">&#67;</button>
+    <button id="clear" type="button" class="clear-light col-6" (click)="limpar()">&#67;</button>
     <button id="porcentagem" type="button" class="operator-group-light" (click)="adicionaOperacao('%')">&#37;</button>
     <button id="divide" type="button" class="operator-group-light" (click)="adicionaOperacao('/')">&#247;</button>
   </div>
@@ -47,7 +47,7 @@
   <div class="d-flex justify-content-between button-row">
     <button id="zero" type="button" class="operand-group-light" (click)="adicionaNumero('0')">&#48;</button>
     <button id="decimal" type="button" class="operator-group-light"(click)="adicionaNumero('.')">&#46;</button>
-    <button id="equal" type="button" class="operator-group-light col-6" (click)="calcular()">&#61;</button>
+    <button id="equal" type="button" class="equal-light col-6" (click)="calcular()">&#61;</button>
   </div>
 
 </div>
